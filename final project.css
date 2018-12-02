@@ -1,0 +1,41 @@
+#map {
+       height: 300px;  /* The height is 400 pixels */
+       width: 90%;  /* The width is the width of the web page */
+       padding :auto
+      }
+
+      body  {
+      background-image: url("curves bcknd.jpg");
+      background-size: cover;
+  }
+  h1{
+  color: White;
+  text-align: center;
+  margin-top: 50px;
+font-family: 'Architects Daughter';
+font-size: 55px;
+
+}
+
+h2{
+  color: white;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+h3{
+  color: white;
+  font-weight: bold;
+  font-family: 'Architects Daughter';
+}
+a{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: 'Architects Daughter';
+      color: #0033cc
+}
+#bottom {
+  color: green
+}

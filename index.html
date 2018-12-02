@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Work Out</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="final project.css">
+  <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="container fluid">
+    <div>
+    <h1>Welcome to Work Out!</h1>
+    <h2>The freelance savior</h2>
+    </div>
+      <div class="container">
+          <p><a href="about.html">About</a></p>
+      <h3>Find a place to work from:</h3>
+    </div>
+
+    <div id="map"></div>
+
+  <div class="container">
+    <div id="area">
+    <ul><li>North London</li>
+      <li>East London</li>
+      <li>West London</li>
+      <li>South London</li>
+    </div>
+  </div>
+
+      <!-- click on any of them and u will be redirected to the page of the right area
+      with this info about each place:
+      <li>free wifi</li>
+      <li>wifi speed?</li>
+      <li>noisy</li>
+      <li>amount of electrical sockets</li>
+      <li>time limit</li>
+      <li></li></ul>
+
+      <!-- after entering your post code there will be a map showing all the places you can work from,
+      when clicking on any of the place you will be shown details about the place
+      name of the place, address, phone num,link to their website,
+      busiest hours, time limit, amount of electrical sockets,
+      how noisy is the place (user based rating 1-10), are the people talkative, nearest public transport-->
+  <div class="container">
+    <div id="bottom">
+      <p>Let's Keep In Touch !</p>
+      </div>
+      <form action=/>
+      <input type="text" placeholder=" Your e-mail Goes Here :) ">
+      <button type="submit" class="btn btn-success">GO!</button>
+    </form>
+    </div>
+</div>
+    <script src="map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs075nPwRsG7WC1HeXd7VsRpWMFZvs8Us&callback=initMap"></script>
+  </body>
+  </html>
