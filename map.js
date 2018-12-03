@@ -1,16 +1,16 @@
 
 let places = [
-  ['Cable & co.','NW',51.534833, -0.219437, 'good coffee, kensal rise high street'],
-  ['Minkies deli','NW',51.534452, -0.219372, 'good coffee, beautiful place, kensal rise high street'],
-  ['Gracelands','NW',51.535745, -0.226393, 'nice staff, cute place, quiet'],
-  ['Bijou London','NW',51.549396, -0.220303, 'acrross willsden green station, outdoor sitting'],
-  ['Java U','W',51.516193, -0.174384],
-  ['Google for Startups Campus','EC',51.522674, -0.085634],
-  ['Nest Cafe','NW',51.549195, -0.221108,'not the best place to work from but great location fot tube'],
-  ['Look mum no hands!','EC', 51.524185, -0.096886,'great place'],
-  ['Chief coffee','W',51.493975, -0.254802],
-  ['The British Library','NW',51.529985, -0.127675,'different style'],
-  ['Ginger & White London','NW',51.546806, -0.161054]]
+  ['Cable & co.','NW',51.534833, -0.219437, 'yes','good coffee, kensal rise high street'],
+  ['Minkies deli','NW',51.534452, -0.219372, 'yes','good coffee, beautiful place, kensal rise high street'],
+  ['Gracelands','NW',51.535745, -0.226393, 'yes','nice staff, cute place, quiet'],
+  ['Bijou London','NW',51.549396, -0.220303, 'yes','acrross willsden green station, outdoor sitting'],
+  ['Java U','W',51.516193, -0.174384,'yes'],
+  ['Google for Startups Campus','EC',51.522674, -0.085634,'yes'],
+  ['Nest Cafe','NW',51.549195, -0.221108,'yes','not the best place to work from but great location fot tube'],
+  ['Look mum no hands!','EC', 51.524185, -0.096886,'yes','great place'],
+  ['Chief coffee','W',51.493975, -0.254802,'yes'],
+  ['The British Library','NW',51.529985, -0.127675,'yes','different style'],
+  ['Ginger & White London','NW',51.546806, -0.161054,'yes']]
 
   function initMap() {
     // The location
@@ -20,16 +20,6 @@ let places = [
       document.getElementById('map'), {zoom: 11, center: London});
       // The marker, positioned at ..
 
-      var marker = new google.maps.Marker({
-       position: map.getCenter(),
-       url: 'http://www.google.com/',
-       map: map
-     });
-
-     google.maps.event.addListener(marker, 'click', function() {
-       window.location.href = marker.url;
-     });
-
       for (let i =0; i <places.length; i++){
         let Marker = new google.maps.Marker(
           {position: {
@@ -38,6 +28,23 @@ let places = [
           },
           map: map,
           title: places[i][0]});
-
-
+          let contentString = '<div >'+
+            '<div>'  +
+            '</div>'+
+            '<h3 class="name-of-place">'+places[i][0]+'</h3>'+
+              '<div >'+
+                 '<p>'+ places[i][0] + '</p></br>'+
+                 '<p>'+ places[i][1]+'</p></br>'+
+                 '<p>free wifi:'+places[i][4]+'</p></br>' +
+                  '<p>wifi speed?'+places[i][1]+'</p></br>' +
+                  '<p>noisy'+places[i][1]+'</p></br>'+
+                  '<p>amount of electrical sockets'+places[i][1]+'</p></br>'+
+                  '<p>time limit'+places[i][1]+'<p></br>'+
+              '</div>'+
+            '</div>';
+          var infowindow = new google.maps.InfoWindow({});
+          google.maps.event.addListener(Marker, 'click', function() {
+              infowindow.setContent(contentString);
+              infowindow.open(map,Marker);
+          });
         }}

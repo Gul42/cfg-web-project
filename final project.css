@@ -9,6 +9,9 @@ body  {
   background-image: url("curves bcknd.jpg");
   background-size: cover;
 }
+.name-of-place{
+  color: black;
+}
 h1{
   color: White;
   text-align: center;
@@ -25,6 +28,11 @@ h2{
 }
 
 h3{
+  color: black;
+  font-weight: bold;
+  font-family: 'Architects Daughter';
+}
+h4{
   color: white;
   font-weight: bold;
   font-family: 'Architects Daughter';
