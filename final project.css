@@ -40,9 +40,10 @@ a{
   margin: 25px 50px 75px;
 }
 #bottom {
+  font-family:'Architects Daughter';
   font-weight: bold;
   color: green;
   font-size: 30px;
   margin: 10px 150px 20px;
-  font-family:'Architects Daughter';
+
 }
