@@ -21,6 +21,7 @@ let places = [
       // The marker, positioned at ..
 
       for (let i =0; i <places.length; i++){
+        //  Marker
         let Marker = new google.maps.Marker(
           {position: {
             lat: places[i][2],
@@ -35,7 +36,7 @@ let places = [
               '<div >'+
                  '<p>'+ places[i][0] + '</p></br>'+
                  '<p>'+ places[i][1]+'</p></br>'+
-                 '<p>free wifi:'+places[i][4]+'</p></br>' +
+                 '<p>free wifi: '+places[i][4]+'</p></br>' +
                   '<p>wifi speed?'+places[i][1]+'</p></br>' +
                   '<p>noisy'+places[i][1]+'</p></br>'+
                   '<p>amount of electrical sockets'+places[i][1]+'</p></br>'+
