@@ -1,26 +1,26 @@
 #map {
-       height: 300px;  /* The height is 400 pixels */
-       width: 90%;  /* The width is the width of the web page */
-       padding :auto
-      }
+  height: 300px;  /* The height is 300 pixels */
+  width: 100%;  /* The width is the width of 90% of the web page */
+  padding :auto
+  align: center;
+}
 
-      body  {
-      background-image: url("curves bcknd.jpg");
-      background-size: cover;
-  }
-  h1{
+body  {
+  background-image: url("curves bcknd.jpg");
+  background-size: cover;
+}
+h1{
   color: White;
   text-align: center;
   margin-top: 50px;
-font-family: 'Architects Daughter';
-font-size: 55px;
+  font-family: 'Architects Daughter';
+  font-size: 55px;
 
 }
 
 h2{
   color: white;
   font-weight: bold;
-
   text-align: center;
 }
 
@@ -30,12 +30,19 @@ h3{
   font-family: 'Architects Daughter';
 }
 a{
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: underline;
-    font-family: 'Architects Daughter';
-      color: #0033cc
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: underline;
+  font-family: 'Architects Daughter';
+  color: #0033cc
+}
+#list-of-areas{
+  margin: 25px 50px 75px;
 }
 #bottom {
-  color: green
+  font-weight: bold;
+  color: green;
+  font-size: 30px;
+  margin: 10px 150px 20px;
+  font-family:'Architects Daughter';
 }
