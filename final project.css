@@ -47,11 +47,14 @@ a{
 #list-of-places-by-areas{
   margin: 25px 50px 75px;
 }
+#form{
+  text-align: center;
+}
 #bottom {
   font-family:'Architects Daughter';
   font-weight: bold;
   color: green;
   font-size: 30px;
-  margin: 10px 150px 20px;
-
+  text-align: center;
+  /*margin: 10px 150px 20px;*/
 }
