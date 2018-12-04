@@ -6,17 +6,25 @@
   <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="final project.css">
   <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
   </style>
 </head>
 <body>
+  <div class="topnav" id="myTopnav">
+    <a href="Home" class="active">Home</a>
+    <a href="Areas.html">Areas</a>
+    <a href="About.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
   <div class="container fluid">
     <div>
       <h1>Welcome to Work Out!</h1>
       <h2>The freelance savior</h2>
     </div>
     <div class="container">
-      <p><a href="About.html">About</a></p>
       <h4>Click on the map to find a place to work from:</h4>
     </div>
     <div id="map"></div>
@@ -36,7 +44,7 @@
   <div class="container">
     <div id="bottom">
       <p>Let's Keep In Touch !</p>
-        <h4>Please let me know if you have more info to add to this site!</h4>
+      <h4>Please let me know if you have more info to add to this site!</h4>
     </div>
   </div>
   <div id="form">
@@ -46,5 +54,9 @@
 </div>
 <script src="map.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs075nPwRsG7WC1HeXd7VsRpWMFZvs8Us&callback=initMap"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </body>
 </html>
