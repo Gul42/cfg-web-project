@@ -9,7 +9,9 @@ let places = [
   ['Look mum no hands!','EC', 51.524185, -0.096886,'49 Old St, London EC1V 9HX','Yes','Fast connection',' Low background music',' Please let me know in the comments below!','','','Great place'],
   ['Chief coffee','W',51.493975, -0.254802,'Turnham Green Terrace Mews, Chiswick, London W4 1QU','Yes','Please let me know in the comments below!',' Please let me know in the comments below!',' Please let me know in the comments below!','','',''],
   ['The British Library Cafe','NW',51.529985, -0.127675,'96 Euston Rd, London NW1 2DB','Yes','Fast connection',' Backgound music',' Please let me know in the comments below!','','','Different style'],
-  ['Ginger & White London','NW',51.546806, -0.161054,'2 England Ln, London NW3 4TG ','Yes','Please let me know in the comments below!',' Please let me know in the comments below!',' Please let me know in the comments below!','','','']]
+  ['Ginger & White London','NW',51.546806, -0.161054,'2 England Ln, London NW3 4TG ','Yes','Please let me know in the comments below!',' Please let me know in the comments below!',' Please let me know in the comments below!','','',''],
+  ['Bonjour Brioche', 'NW',51.546983, -0.160999,'2a England Ln, London NW3 4TG','Yes','Poor','Jazzy background music', ' A few sockets upstairs and downstairs',' No time limit','Please let me know in the comments below!','Lovely place with good food and pastries, prices range:8-13£'],
+  ['Map Studio Cafe', 'NW',51.547964, -0.145017, '46 Grafton Rd, London NW5 3DU','Yes', 'Fast connection','Quiet with great jazzy music', ' A few, not for every table', ' No time limit', ' Lunch time', 'Lovely place, great atmosphere, good strong coffee ' ]];
 
   function initMap() {
     // The location
